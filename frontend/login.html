@@ -1,0 +1,48 @@
+<!-- frontend/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login__section border border-secondary mt-5 mx-5 px-3 px-sm-5 rounded bg-red">
+        <div class="my-4 h1 text-center">Login</div>
+        <div class="my-4 text-muted text-center">Enter you email and password</div>
+        <form id="loginForm" class="d-flex flex-column ">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              required
+            />
+          </div>
+          <button type="submit" class="bg-dark text-light py-2 my-4">Login</button>
+        </form>
+        <div class="mt-2 text-center">
+          Don't have an account? <a class="text-muted" href="register.html">Register here</a>
+        </div>
+        <div class="pb-3 text-center mt-2 mb-4 mb-sm-4"><a class="text-muted" href="reset-password.html">Forgot password?</a></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

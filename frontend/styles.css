@@ -1,0 +1,92 @@
+/* Add any custom styles here */
+body {
+  background-color: #afbcca;
+}
+.login{
+  display: flex;
+  justify-content: center;
+}
+
+.login__section {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+@media (min-width: 576px) {
+  .login__section {
+    width: 400px;
+  }
+}
+
+.fit {
+  padding: 20px;
+  margin-left: 300px;
+}
+.sidebar {
+  background-color: #363740;
+  width: 255px;
+  height: 100vh;
+  position: fixed;
+}
+.sidebar__top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-content: center;
+  padding: 37px 32px;
+}
+
+.sidebar__top--image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #3751ff;
+}
+.sidebar__top--title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #a4a6b3;
+  opacity: 0.7;
+  letter-spacing: 0.4px;
+}
+
+.sidebar__menu {
+  margin-block: 44px;
+}
+.sidebar__menu__tab {
+  padding: 17px 32px 17px 32px;
+  display: flex;
+  gap: 24px;
+  color: #a4a6b3;
+}
+.sidebar__menu:nth-child(6) {
+  padding-bottom: 34px;
+}
+.sidebar__menu:nth-child(7) {
+  padding-top: 34px;
+  border-top: 1px solid #dfe0eb;
+}
+.sidebar__menu:hover {
+  color: #dde2ff;
+  background: hwb(1330 37% 61%);
+  border-left: 3px solid #dde2ff;
+}
+.sidebar__menu:hover--link {
+  font-size: 112px;
+}
+
+.sidebar__menu__tab--icon {
+  font-size: 16px;
+  opacity: 0.4;
+}
+.sidebar__menu__tab--link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  color: #a4a6b3;
+}
